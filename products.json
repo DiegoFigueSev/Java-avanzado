@@ -1,0 +1,23 @@
+[
+  {
+    "id": 2342342,
+    "name": "",
+    "price": 23.0,
+    "stock": 2,
+    "category": "CLOTHING"
+  },
+  {
+    "id": 123123,
+    "name": "",
+    "price": 23.0,
+    "stock": 21,
+    "category": "ELECTRONICS"
+  },
+  {
+    "id": 123456789,
+    "name": "23",
+    "price": 23.0,
+    "stock": 12,
+    "category": "FOOD"
+  }
+]

@@ -1,17 +1,19 @@
 package org.diegofigueroa;
 
-import org.diegofigueroa.tema_02_programacionfuncional.clase_03_interfacesfuncionales.MyConsumer;
-import org.diegofigueroa.tema_02_programacionfuncional.clase_03_interfacesfuncionales.MyFunction;
-import org.diegofigueroa.tema_02_programacionfuncional.clase_03_interfacesfuncionales.MyPredicate;
-import org.diegofigueroa.tema_02_programacionfuncional.clase_03_interfacesfuncionales.MySupplier;
-import org.diegofigueroa.tema_02_programacionfuncional.clase_04_collecciones.MyCollections;
-import org.diegofigueroa.tema_02_programacionfuncional.clase_05_streams.MyStream;
-import org.diegofigueroa.tema_02_programacionfuncional.clase_06_ternarios.MyTernary;
-import org.diegofigueroa.tema_02_programacionfuncional.clase_07_tecnicasavanzadas.StreamAvanzado;
-import org.diegofigueroa.tema_02_programacionfuncional.practica_01.Calculator;
+
+import org.diegofigueroa.tema_03_claseoptional.practica_final.controller.ProductController;
+import org.diegofigueroa.tema_03_claseoptional.practica_final.interfaces.ProductRepository;
+import org.diegofigueroa.tema_03_claseoptional.practica_final.repository.ProductRepositoryServices;
+import org.diegofigueroa.tema_03_claseoptional.practica_final.service.ProductService;
+import org.diegofigueroa.tema_03_claseoptional.practica_final.view.ProductView;
 
 public class Main {
     static void main() {
-        new StreamAvanzado();
+        ProductRepository repositoryServices = new ProductRepositoryServices();
+        ProductService productService = new ProductService(repositoryServices);
+        ProductController controller = new ProductController(productService);
+        ProductView view = new ProductView(controller);
+        view.showMenu();
+
     }
 }
