@@ -1,17 +1,17 @@
 package org.diegofigueroa;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import org.diegofigueroa.tema_02_programacionfuncional.clase_03_interfacesfuncionales.MyConsumer;
+import org.diegofigueroa.tema_02_programacionfuncional.clase_03_interfacesfuncionales.MyFunction;
+import org.diegofigueroa.tema_02_programacionfuncional.clase_03_interfacesfuncionales.MyPredicate;
+import org.diegofigueroa.tema_02_programacionfuncional.clase_03_interfacesfuncionales.MySupplier;
+import org.diegofigueroa.tema_02_programacionfuncional.clase_04_collecciones.MyCollections;
+import org.diegofigueroa.tema_02_programacionfuncional.clase_05_streams.MyStream;
+import org.diegofigueroa.tema_02_programacionfuncional.clase_06_ternarios.MyTernary;
+import org.diegofigueroa.tema_02_programacionfuncional.clase_07_tecnicasavanzadas.StreamAvanzado;
+import org.diegofigueroa.tema_02_programacionfuncional.practica_01.Calculator;
+
 public class Main {
     static void main() {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        IO.println(String.format("Hello and welcome!"));
-
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            IO.println("i = " + i);
-        }
+        new StreamAvanzado();
     }
 }
