@@ -31,5 +31,12 @@ public class TiposDeOptional {
         String response2 = optional2.orElseThrow(() -> new IllegalStateException("Dato no bueno"));
         System.out.println(response2);
 
+        /**
+         * Si el valor por defecto es simple → orElse -> Si mandamos una funcion como argumento al orElse, este siempre ejecutara la funcion este o no presente el valor del optional
+         *
+         * Si es costoso (DB, API, cálculo) → orElseGet
+         *
+         * Si es obligatorio → orElseThrow
+         */
     }
 }

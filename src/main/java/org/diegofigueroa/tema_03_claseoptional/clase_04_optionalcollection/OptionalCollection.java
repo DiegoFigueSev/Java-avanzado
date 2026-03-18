@@ -44,7 +44,7 @@ public class OptionalCollection {
         );
         String response = optionals.stream()
                 .filter(e -> e.isPresent())
-                .map(e -> e.get())
+                .map(Optional::get)
                 .reduce("", (ac, str) -> ac + " " + str);
         System.out.println(response);
     }

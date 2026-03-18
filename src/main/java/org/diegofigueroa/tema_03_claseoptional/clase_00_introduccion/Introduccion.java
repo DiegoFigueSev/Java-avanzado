@@ -20,7 +20,7 @@ public class Introduccion {
         Optional<String> name = Optional.of("Gabriel");
 
         if (name.isPresent()){
-            System.out.println("El nombre esta presente");
+            System.out.println(name.get());
         }
 
         //? Es cuando intuimos que nos puede llegar null
@@ -37,6 +37,10 @@ public class Introduccion {
         greeding.ifPresent(message -> System.out.println("Soy Gabriel " + message));
 
 
+        nick.ifPresentOrElse(
+                (e) -> System.out.println(e.toUpperCase()),
+                () -> System.out.println("No existe un valor")
+        );
 
     }
 }
