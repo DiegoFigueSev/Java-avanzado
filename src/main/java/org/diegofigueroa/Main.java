@@ -14,11 +14,15 @@ import org.diegofigueroa.tema_06_hilosyconcurrencia.clase_03_concurrenciayparale
 import org.diegofigueroa.tema_06_hilosyconcurrencia.clase_03_concurrenciayparalelismo.MyParallelism;
 import org.diegofigueroa.tema_06_hilosyconcurrencia.clase_04_shutdownnow.MyShutdown;
 import org.diegofigueroa.tema_06_hilosyconcurrencia.clase_05_callableyfuture.MyCallable;
+import org.diegofigueroa.tema_07_programacionreactiva.clase_01_parallelstream.MyParallelStreams;
+import org.diegofigueroa.tema_07_programacionreactiva.clase_02_observable.MyObservable;
+import org.diegofigueroa.tema_07_programacionreactiva.clase_02_observable.MyReactiveScanner;
+import org.diegofigueroa.tema_07_programacionreactiva.clase_03_temperaturesensor.MySensor;
 
 public class Main {
     static void main() {
 
-        new MyCallable();
+        new MySensor();
 
 
     }
